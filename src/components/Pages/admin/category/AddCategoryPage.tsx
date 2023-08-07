@@ -44,13 +44,7 @@ const AddCategoryPage = (props: IProps) => {
         >
           <Input />
         </Form.Item>
-        <Form.Item
-          label="Category price"
-          name="price"
-          rules={[{ required: true, message: 'Please input your Category name!' }]}
-        >
-          <Input />
-        </Form.Item>
+
 
 
         <Form.Item

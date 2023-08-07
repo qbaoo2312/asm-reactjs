@@ -20,8 +20,7 @@ import { addProductAction, deleteProductAction, getProductListAction, updateProd
 import { IProduct } from './interfaces/product';
 import {  addCategoryAction, deleteCategoryAction, getCategoryListAction, updateCategoryAction } from './store/category/actions';
 import { ICategory } from './interfaces/category';
-import Login from './components/Pages/Login';
-import Register from './components/Pages/Register';
+
 function App() {
   const dispatch:Dispatch<any> = useDispatch()
   const productState = useSelector((state:IRootState)=>state.product)
@@ -75,8 +74,7 @@ const onRemoveCate =  (id: string)=>{
         <Route path='info'>
         </Route>
       </Route>
-      <Route path='login' element={<Login/>}/>
-      <Route path='register' element={<Register/>}/>
+
 
     </Routes>
 </div>
